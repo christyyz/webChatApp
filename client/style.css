@@ -1,0 +1,111 @@
+@media screen and (min-width:1024px) {
+    #app-view{
+        width : 80% ;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+    #app-view{
+        width : 90% ;
+    }
+}
+@media screen and (max-width:768px) {
+    #app-view{
+        width : 100% ;
+    }
+}
+
+
+/* Shared in all three pages */
+#app-view{
+    background-color: white;
+    color: black;
+    height: 100%;
+    /* width: 100%; */
+}
+
+#app-menu{
+    background-color: white;
+    color : black;
+    column-count: 2;
+    text-align: center;
+    list-style-type: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #F9F5EB;
+}
+
+.menu-item{
+    background-color: white;
+    color: black;
+}
+
+#page-view{
+    background-color: white;
+    color: black;
+}
+
+.content{
+    background-color: white;
+    color: black;
+}
+
+.page-control{
+    background-color: white;
+}
+
+/* In index.html */
+.room-list{
+    background-color: white;
+    color: black;
+    list-style-type: none;
+}
+
+/* In chat.html */
+.room-name{
+    background-color: white;
+    color: black;
+}
+
+.message-list{
+    background-color: white;
+    color: black;
+    overflow: scroll;
+}
+
+.message{
+    background-color: #F9F0DB;
+    color: black;
+    text-align: left;
+}
+
+.my-message{
+    background-color: #F9E9C3;
+    color: black;
+    text-align: right;
+}
+
+.message-user{
+    color: black;
+    font-weight: bold;
+}
+
+.message-text{
+    color: black;
+    font-weight: normal;
+}
+
+/* In profile.html */
+.profile-form{
+    background-color: white;
+    color: black;
+}
+
+.form-field{
+    background-color: white;
+    color: black;
+}

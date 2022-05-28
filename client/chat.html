@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CPEN322 Project</title>
+    <link rel = "stylesheet" href = "style.css">
+  </head>
+
+  <body>
+    <!-- Main Container -->
+    <div id = app-view>
+
+      <!-- Navigation -->
+      <ul id = app-menu>
+          <!-- Menu Item 1 -->
+          <li class = menu-item>
+              <!-- Link -->
+              <a href = '#/'>Rooms</a>
+          </li>
+          <!-- Menu Item 2 -->
+          <li class = menu-item>
+              <!-- Link -->
+              <a href = '#/profile'>Profile</a>
+          </li>
+      </ul>
+
+      <!-- Page Container -->
+      <!-- Structure:
+* Page Content Container (`div class = content`)
+    * Room Name Heading (`h4 class = room-name`)
+    * Messages (`div class = message-list`)
+        * Other User Message Box (`div class = message`)
+            * Username Text (`span class = message-user`)
+            * Message Text (`span class = message-text`)
+        * Current End-User Message Box (`div class = message my-message`)
+            * Username Text (`span class = message-user`)
+            * Message Text (`span class = message-text`)
+    * Page Controls (`div class = page-control`)
+        * Input for message (`textarea`)
+        * Button to send message (`button`)
+       -->
+      <div id = page-view>
+        <!-- Page Content Container -->
+        <div class = content>
+          <h4 class = room-name>Room Name Heading</h4>
+          <!-- Messages -->
+          <div class = message-list>
+            <!-- Other User Message Box -->
+            <div class = message>
+              <span class = message-user>Other Username Text </span>
+              <span class = message-text>Other Message Text</span>
+            </div>
+            <!-- Currenr End-User Message Box -->
+            <div class = my-message>
+              <span class = message-user>Current Username Text</span>
+              <span class = message-text>Current Message Text</span>
+            </div>
+          </div>
+          <!-- Page Control -->
+          <div class = page-control>
+            <textarea></textarea>
+            <button>Send</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+
+</html> 

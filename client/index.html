@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CPEN322 Project</title>
+    <script src="app.js"></script>
+    <link rel = "stylesheet" href = "style.css">
+  </head>
+
+  <!-- Structure:
+* Main Container (`div id = app-view`)
+* Navigation (`ul id = app-menu`)
+    * Menu Item 1 (`li class = menu-item`)
+        * Link (`a href = /`)
+    * Menu Item 2 (`li class = menu-item`)
+        * Link (`a href = /profile`)
+* Page Container (`div id = page-view`)
+  -->
+
+  <body>
+    <!-- Main Container -->
+    <div id = app-view>
+
+      <!-- Navigation -->
+      <ul id = app-menu>
+          <!-- Menu Item 1 -->
+          <li class = menu-item>
+              <!-- Link -->
+              <a href = '#/'>Rooms</a>
+          </li>
+          <!-- Menu Item 2 -->
+          <li class = menu-item>
+              <!-- Link -->
+              <a href = '#/profile'>Profile</a>
+          </li>
+      </ul>
+
+      <!-- Page Container -->
+      <!-- Structure:
+* Page Content Container (`div class = content`)
+    * List of Rooms (`ul class = room-list`)
+        * Menu Item 1 ~ 4 (`li`)
+            * Link (`a href = /chat`)
+    * Page Controls (`div class = page-control`)
+        * Input for new room name (`input type = text`)
+        * Button to create new room (`button`)        
+       -->
+      <div id = page-view>
+        <!-- Page Content Container -->
+        <div class = content>
+          <!-- List of Rooms -->
+          <ul class = room-list>
+            <!-- Menu Item 1-4 -->
+            <li class = menu-item><a href = '#/chat1'>Chat Room 1</a></li>
+            <li class = menu-item><a href = '#/chat2'>Chat Room 2</a></li>
+            <li class = menu-item><a href = '#/chat3'>Chat Room 3</a></li>
+            <li class = menu-item><a href = #/chat4>Chat Room 4</a></li>
+          </ul>
+          <!-- Page Controls -->
+          <div class = page-control>
+            <input type = text placeholder="Room Title">
+            <button>Create Room</button>
+          </div>
+        </div> 
+      </div>
+      
+    </div>
+  </body>
+
+</html> 
